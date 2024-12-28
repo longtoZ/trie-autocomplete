@@ -29,6 +29,7 @@ const string RED = "\x1b[38;5;9m";
 const string WHITE = "\x1b[38;5;15m";
 const string GRAY = "\x1b[38;5;8m";
 
+// Log function for colored output
 void log(const string& message, const string& color = WHITE, const string& style = RESET) {
     cout << style << color << message << RESET << endl;
 }
@@ -235,7 +236,7 @@ private:
     }
 
     void searchByRegex(vector<string>& results, string targetWord, TrieNode* currentNode, string currentWord, int& wordLimit) {
-        if (!currentNode || results.size() > wordLimit) return;
+        if (!currentNode || results.size() >= wordLimit) return;
 
         // Iterate through every character of the target word
         for (int i = 0; i < targetWord.size(); i++) {
@@ -1430,7 +1431,7 @@ private:
                 auto duration = duration_cast<milliseconds>(stop - start);
 
                 if (suggestions.empty()) {
-                    log("[ > ] :No suggestions found! Would you like to use fuzzy search? (y/n): ", YELLOW);
+                    log("[ > ] : No suggestions found! Would you like to use fuzzy search? (y/n): ", YELLOW);
                     char choice;
                     cin >> choice;
 
