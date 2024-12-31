@@ -21,7 +21,7 @@
 
 ## 3. Documentation and presentation
 - Trie Presentation Powerpoint: [Trie_Presentation_Powerpoint.pdf](./slides/Trie_Presentation_Powerpoint.pdf)
-- Trie Report: [Trie_Report.pdf](./report/Trie_Report.pdf)
+- Trie Report: [Trie_Report.pdf](./slides/Trie_Report.pdf)
 - Demo video (Youtube): [Trie_Demo_Video.mp4](https://youtu.be/s2pLG1ZJhXE)
 
 > Disclaimer: This is a project for extra points in the course so it is not guaranteed to be perfect. If you see my face to be tired in the video, it's because I dont have enough sleep :))
